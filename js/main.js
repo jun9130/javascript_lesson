@@ -1,9 +1,14 @@
-let age = 17;
+let rank = 7
 
-if (age >= 20) {
-  console.log("20歳以上です")
-} else if(age >= 10) {
-  console.log("10歳以上20歳未満です");
-} else {
-  console.log("10歳未満です");
+switch (rank) {
+  case 1:
+    console.log("金メダルです！");
+  case 2:
+    console.log("銀メダルです！");
+  case 3:
+    console.log("銅メダルです！");
+    break;
+  default:
+    console.log("メダルはありません");
+  break;
 }
