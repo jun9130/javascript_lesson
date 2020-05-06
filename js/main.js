@@ -1,5 +1,9 @@
-let name = "太郎";
 let age = 17;
 
-console.log(`僕の名前は${name}です`);
-console.log(`今は${age}歳です`);
+if (age >= 20) {
+  console.log("20歳以上です")
+} else if(age >= 10) {
+  console.log("10歳以上20歳未満です");
+} else {
+  console.log("10歳未満です");
+}
