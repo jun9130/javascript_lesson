@@ -1,14 +1,12 @@
-let rank = 7
+let number = 1;
 
-switch (rank) {
-  case 1:
-    console.log("金メダルです！");
-  case 2:
-    console.log("銀メダルです！");
-  case 3:
-    console.log("銅メダルです！");
-    break;
-  default:
-    console.log("メダルはありません");
-  break;
-}
+while (number <= 100) {
+  if (number % 3 === 0) {
+    console.log("3の倍数です")
+  }
+  else
+  {
+    console.log(number)
+  }
+  number += 1
+} 
