@@ -13,14 +13,13 @@
         <h1 class="frame__title">JavaScript</h1>
 
         <div class="frame__inner">
-            <!-- ここに、JavaScriptを記述します -->
             <script>
                 const price = parseInt(prompt('商品の金額を入力してください'));
                 const tax = 10;
 
                 if (Number.isFinite(price)) {
-                    let tax_price = Math.round(price * (tax / 100));
-                    document.write(`${price}円の消費税(${tax}%)は、${tax_price}円です`);
+                let tax_price = Math.round(price * (tax / 100));
+                document.write(`${price}円の消費税${tax}%は、${tax_price}円です`);
                 } else {
                     alert('数字を入力してください');
                 }

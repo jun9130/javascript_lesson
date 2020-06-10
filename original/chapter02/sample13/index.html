@@ -13,17 +13,15 @@
         <h1 class="frame__title">JavaScript</h1>
 
         <div class="frame__inner">
-            <!-- ここに、JavaScriptを記述します -->
             <script>
                 const words = {
                     'Apple': 'りんご',
                     'Orange': 'オレンジ',
                     'Grapes': 'グレープ'
                 }
-
                 let q = prompt('英単語を入力してください');
                 if (words[q]) {
-                    document.write(`${q}の日本語訳は、${words[q]}です`);
+                document.write(`${q}の日本語訳は${words[q]}です`);            
                 } else {
                     document.write('その単語は登録されていません');
                 }
@@ -32,4 +30,4 @@
     </div>
 </body>
 
-</html>
+</html>1
