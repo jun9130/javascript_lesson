@@ -14,12 +14,20 @@
 
         <div class="frame__inner">
            <script>
-               const getTax = (price, tax=10) => {
-                   return Math.round(price * (tax / 100));
-               }
+            //    const getTax = (price, tax=10) => {
+            //        return Math.round(price * (tax / 100));
+            //    }
 
-               let tax = getTax(1980, 8);
-               document.write(tax);
+            //    let tax = getTax(1980, 8);
+            //    document.write(tax);
+
+
+            // varはグローバル変数
+            // 基本的にはletを使う
+            for (var i=0; i<10; i++) {
+                document.write(i);    
+            }
+            alert(i);
            </script>
         </div>
     </div>
