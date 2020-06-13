@@ -13,25 +13,22 @@
         <h1 class="frame__title">JavaScript</h1>
 
         <div class="frame__inner">
-            <!-- ここに、JavaScriptを記述します -->
             <script>
-                // Itemクラスを定義する
+                // クラスの定義
                 class Item {
-                    // コンストラクターを定義する
+                    // コンストラクターを定義
                     constructor(price) {
-                        // プロパティを定義する
                         this.price = price;
                     }
-
-                    // 消費税を取得するメソッド
+                    // メソッド
                     getTax() {
                         return Math.round(this.price * (10 / 100));
                     }
                 }
-                
                 const price = parseInt(prompt('商品の金額を入力してください'));
+                // インスタンス作成
                 const item = new Item(price);
-                document.write(item.getTax());
+                document.write(`${price}円の消費税金額は${item.getTax()}円になります。`);
             </script>
         </div>
     </div>
