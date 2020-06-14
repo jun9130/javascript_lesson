@@ -13,19 +13,19 @@
         <h1 class="frame__title">JavaScript</h1>
 
         <div class="frame__inner">
-            <p>メールアドレス： <input type="email" name="email" id="">
+            <p>メールアドレス: <input type="email" name="email" id="">
             <span style="color: #f33"></span>
             </p>
-            <!-- ここに、JavaScriptを記述します -->
             <script>
                 const email = document.querySelector('input[name="email"]')
                 email.addEventListener('blur', () => {
                     if (email.value === '') {
                         email.style.backgroundColor = '#fcc';
-                        email.nextElementSibling.innerHTML = '※ メールアドレスをご記入ください';
+                        email.nextElementSibling.innerHTML = '※ メールアドレスを入力してください';
                     } else {
                         email.style.backgroundColor = '#fff';
                         email.nextElementSibling.innerHTML = '';
+
                     }
                 });
             </script>
