@@ -13,13 +13,12 @@
         <h1 class="frame__title">JavaScript</h1>
 
         <div class="frame__inner">
-            <!-- ここに、JavaScriptを記述します -->
             <script>
-                // class Calc {
-                //     static sum(num1, num2) {
-                //         return num1 + num2;
-                //     }
-                // }
+                class Calc {
+                    static sum(num1, num2) {
+                        return num1 + num2;
+                    }
+                }
 
                 // document.write(Calc.sum(10, 5));
 
@@ -30,6 +29,7 @@
                         } else {
                             this._tax = 0;
                         }
+                        
                     }
 
                     set tax(tax) {
@@ -39,14 +39,14 @@
                             this._tax = 0;
                         }
                     }
-                    
+
                     get tax() {
-                        return this._tax + '%';
+                      return this._tax + '%';
                     }
                 }
 
                 let item = new Item(10);
-                item.tax = 8;
+                item.tax = 'abc';
                 document.write(item.tax);
             </script>
         </div>

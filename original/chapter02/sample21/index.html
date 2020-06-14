@@ -13,26 +13,26 @@
         <h1 class="frame__title">JavaScript</h1>
 
         <div class="frame__inner">
-            <!-- ここに、JavaScriptを記述します -->
             <script>
-                const locations = [
+                JSON
+                const location = [
                     {
                         "name": "国会議事堂",
-                        "address": "東京都千代田区x-x-x"
+                        "address": "東京都千代田区1-1-1"
                     },
                     {
                         "name": "札幌時計台",
-                        "address": "札幌市中央区北x-x-x"
+                        "address": "札幌市中央区北1-1-1"
                     },
                     {
                         "name": "首里城",
-                        "address": "沖縄県那覇市x-x-x"    
+                        "address": "沖縄県那覇市1-1-1"
                     }
                 ];
 
-                for (let i=0; i<locations.length; i++) {
-                    document.write(locations[i].name + '/'
-                        + locations[i].address + '<br>');
+                for (let i=0; i<location.length; i++) {
+                    document.write(location[i].name + '/' 
+                    + location[i].address + '<br>');
                 }
             </script>
         </div>
