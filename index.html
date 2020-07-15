@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
 
-    <title>Number guessing game</title>
+<head>
+  <meta charset="utf-8">
 
-    <style>
-      html {
-        font-family: sans-serif;
-      }
-      body {
-        width: 50%;
-        max-width: 800px;
-        min-width: 480px;
-        margin: 0 auto;
-      }
-      .lastResult {
-        color: white;
-        padding: 3px;
-      }
-    </style>
-  </head>
+  <title>JavaScript Lesson</title>
 
-  <body>
-    <button>押してください</button>
-  
+  <style>
+
+  </style>
+</head>
+
+<body>
+
   <script>
-    const button = document.querySelector('button');
 
-    button.onclick = fuction() {
-      let name = prompt('あなたの名前は何ですか？');
-      alert('こんにちは、' + name + 'さん、初めまして！');
+    // function 関数() {
+    //   命令
+    // }
+    // 呼び出し
+    // 関数();
+    // function myFunction() {
+    //   alert('hello');
+    // }
+    // myFunction();
+
+
+
+    // 引数が必要な関数もある
+    // replace()→置換
+    let myText = 'I am a string';
+    let newString = myText.replace('string', 'sausage');
+    function word() {
+      alert(newString);
     }
+    word();
+
+    
   </script>
-  
-  </body>
+
+</body>
+
 </html>
