@@ -1,1 +1,1 @@
-console.log(1);
+let btn = document.getElementById('btn')
