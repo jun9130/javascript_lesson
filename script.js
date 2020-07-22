@@ -16,4 +16,8 @@ let people = {
   greeting() {}
 };
 
-people.list.japansese.man[0].teachProgramming();
+// window.console.log();
+
+// window.alert();
+
+// window.document.getElementById()

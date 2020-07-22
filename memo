@@ -9,8 +9,23 @@
 
 
 
-
-
+オブジェクトの生成
 let 変数 = {
-    オブジェクトの宣言
+    プロパティやメソッド
+};
+
+
+Window, Documentオブジェクト
+
+windowオブジェクト 省略可 = {
+  
+  consoleプロパティ : {
+    log()メソッド {...},
+  },
+
+  alert()メソッド{...},
+
+  documentオブジェクト: {
+    getElementByID(){...},
+  }
 };
