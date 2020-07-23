@@ -23,16 +23,24 @@
 
 // 関数の例
 // returnありの場合
-function isTweetable(text) {
-  return text.length <= 140;
-}
+// function isTweetable(text) {
+//   return text.length <= 140;
+// }
 
-console.log(isTweetable("foo"));
+// console.log(isTweetable("foo"));
 
 // returnなしの場合
-function alertTweetable(text) {
-  if (text.length <= 140) {
-    alert("you can tweet!");
-  }
+// function alertTweetable(text) {
+//   if (text.length <= 140) {
+//     alert("you can tweet!");
+//   }
+// }
+// alertTweetable("aaa")
+
+function number(a,b) {
+  const addition = a + b;
+  return addition;
 }
-alertTweetable("aaa")
+
+const answer = number(13, 2);
+console.log(answer);
