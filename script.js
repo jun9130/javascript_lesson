@@ -38,9 +38,9 @@
 // alertTweetable("aaa")
 
 function number(a,b) {
-  const addition = a + b;
-  return addition;
+  const additionNumber = a + b;
+  return additionNumber;
 }
+console.log( number(13, 2));
 
-const answer = number(13, 2);
-console.log(answer);
+
