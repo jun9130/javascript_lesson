@@ -1,3 +1,8 @@
+const number = [];
+number.push(3,4);  //push() メソッド配列の末尾に要素追加
+console.log(number[0]*number[1]);
+
+
 // let people = {
 //   list: {
 //     japansese: {
@@ -37,10 +42,8 @@
 // }
 // alertTweetable("aaa")
 
-function number(a,b) {
-  const additionNumber = a + b;
-  return additionNumber;
-}
-console.log( number(13, 2));
-
-
+// function number(a,b) {
+//   const additionNumber = a + b;
+//   return additionNumber;
+// }
+// console.log( number(13, 2));
