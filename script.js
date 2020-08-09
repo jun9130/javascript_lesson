@@ -1,9 +1,6 @@
-const str = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis in molestiae';
-
-// split()メソッド 指定した区切りで文字列を取り出す ex今回は半角スペースごと
-const words = str.split(' ');
-//forEach()メソッド 配列の要素を取り出す
-words.forEach(element => console.log(element));
+for (let i = 0; i < 3; i++) {
+  console.log("現在" + (i+1) + "回目の処理です。");
+}
 
 
 //   list: {
