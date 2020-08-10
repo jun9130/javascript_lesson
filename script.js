@@ -1,48 +1,8 @@
-for (let i = 0; i < 3; i++) {
-  console.log("現在" + (i+1) + "回目の処理です。");
-}
+// カンマで変数を複数定義可能
+const bookTitle = "ハリーポッター",
+      bookCategory = "ファンタジー";
 
-
-//   list: {
-//     japansese: {
-//       man: [
-//         { name: "ヤマト", age: 20, teachProgramming() {} },
-//         { name: "タケル", age: 32, teachHistory() {} },
-//       ],
-//       teach() {}
-//     },
-//     America: {
-//       man: [ { name: "TOM" }, {name: "MIKE" } ],
-//       makeSmile() {}
-//     }
-//   },
-//   plan() {},
-//   greeting() {}
-// };
-
-// window.console.log();
-// window.alert();
-// window.document.getElementById();
-
-
-// 関数の例
-// returnありの場合
-// function isTweetable(text) {
-//   return text.length <= 140;
-// }
-
-// console.log(isTweetable("foo"));
-
-// returnなしの場合
-// function alertTweetable(text) {
-//   if (text.length <= 140) {
-//     alert("you can tweet!");
-//   }
-// }
-// alertTweetable("aaa")
-
-// function number(a,b) {
-//   const additionNumber = a + b;
-//   return additionNumber;
-// }
-// console.log( number(13, 2));
+// letは初期値がない変数も定義可能
+let fruit;
+// 代入可
+fruit = "apple";
