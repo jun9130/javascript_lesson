@@ -1,3 +1,4 @@
+let people = {
   list: {
     japansese: {
       man: [
@@ -20,15 +21,15 @@ window.alert();
 window.document.getElementById();
 
 
-関数の例
-returnありの場合
+/* 関数の例
+returnありの場合 */
 function isTweetable(text) {
   return text.length <= 140;
 }
 
 console.log(isTweetable("foo"));
 
-returnなしの場合
+// returnなしの場合
 function alertTweetable(text) {
   if (text.length <= 140) {
     alert("you can tweet!");

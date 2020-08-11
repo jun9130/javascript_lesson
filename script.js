@@ -1,8 +1,8 @@
-// カンマで変数を複数定義可能
-const bookTitle = "ハリーポッター",
-      bookCategory = "ファンタジー";
+const total = 32 * 2;
+console.log(total);
 
-// letは初期値がない変数も定義可能
-let fruit;
-// 代入可
-fruit = "apple";
+console.log('複数の改行\nを入れ\nたい');
+
+const str = '文字列';
+console.log(`これは${str}です`);
+

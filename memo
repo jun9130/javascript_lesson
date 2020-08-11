@@ -49,3 +49,12 @@ var 再代入◯ 再定義◯
 const 関数の結果 = 関数名(引数1, 引数2);
 console.log(関数の結果);
 
+// typeof演算子
+データ型の確認
+ex.
+console.log(typeof true);
+console.log(typeof "JavaScript");
+
+// テンプレートリテラル
+const str = '文字列';
+console.log(`これは${str}です`);
