@@ -1,16 +1,21 @@
-//分割代入
-const array = [1, 2];
-const [a, b] = array;
-console.log(array[0]);
+function double(num) {
+  return num * 2;
+}
+console.log(double(10));
 
-const obj = {
-  key: "value"
-};
-//オブジェクトの生成は{ }で囲む
-const { key } = obj;
-console.log(key);
 
-console.log(1 === '1');
-console.log(1 == '1'); // 暗黙的な型変換 等価演算子(==)は推奨しない
+function un() {
+}
+console.log(un());
 
-console.log(String("str"));
+
+function word(x, y="夏") {
+  return x + y;
+}
+
+console.log(word("暑い"));
+console.log(word("暑い", ""));
+console.log(word("暑い", "部屋"));
+
+
+
