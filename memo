@@ -8,12 +8,10 @@
  - オブジェクトの機能に相当
 
 
-
 // オブジェクトの生成
 const 変数 = {
     プロパティやメソッド
 };
-
 const obj = {
   key: 'value'
 };
@@ -21,6 +19,8 @@ const obj = {
 console.log(obj.key); // => "value"
 // ブラケット記法
 console.log(obj["key"]); // => "value"
+
+
 
 // Window, Documentオブジェクト
 windowオブジェクト 省略可 = {
@@ -36,13 +36,41 @@ windowオブジェクト 省略可 = {
   }
 };
 
+
+
 // 変数
 const 再代入× 再定義× →定数ではない→オブジェクトの中身は変更できるため
 let 再代入◯ 再定義×
 var 再代入◯ 再定義◯
 
+
+
 //配列
 const array = [];
+
+
+
+//分割代入
+const array = [1, 2];
+const [a, b] = array;
+console.log(array[0]);
+
+const array = [1, 2]; //これと同じ結果
+const a = array[0];
+const b = array[1];
+
+const obj = {
+  key: "value"
+};
+const { key } = obj; //オブジェクトの生成は{ }で囲む
+console.log(key);
+
+const obj = {         //これと同じ結果
+    "key": "value"
+};
+const key = obj.key;
+
+
 
 // 関数の構文
   function 関数名(仮引数1, 仮引数2) {
