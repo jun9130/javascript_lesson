@@ -10,11 +10,17 @@
 
 
 // オブジェクトの生成
-let 変数 = {
+const 変数 = {
     プロパティやメソッド
 };
 
-
+const obj = {
+  key: 'value'
+};
+// ドット記法
+console.log(obj.key); // => "value"
+// ブラケット記法
+console.log(obj["key"]); // => "value"
 
 // Window, Documentオブジェクト
 windowオブジェクト 省略可 = {
@@ -30,14 +36,13 @@ windowオブジェクト 省略可 = {
   }
 };
 
-
-
 // 変数
 const 再代入× 再定義× →定数ではない→オブジェクトの中身は変更できるため
 let 再代入◯ 再定義×
 var 再代入◯ 再定義◯
 
-
+//配列
+const array = [];
 
 // 関数の構文
   function 関数名(仮引数1, 仮引数2) {
