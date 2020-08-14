@@ -82,12 +82,43 @@ const key = obj.key;
 const 関数の結果 = 関数名(引数1, 引数2);
 console.log(関数の結果);
 
+// 関数式
+const 関数名 = function() {
+    // 関数を呼び出したときの処理
+    // ...
+    return 関数の返り値;
+};
+// 関数式は変数名で参照できるため、"関数名"を省略できる
+const 変数名 = function() {
+};
+// 関数宣言では"関数名"は省略できない
+function 関数名() {
+}
+
 
 
 //デフォルト引数
 function 関数名(仮引数1 = デフォルト値1, 仮引数2 = デフォルト値2) {
 
 }
+
+//可変長引数→引数が固定ではなく任意の個数
+
+//残余引数
+function num(...args) {
+  console.log(args);
+}
+num(1, 2, 3);
+
+//Spread構文
+function fn(x, y, z) {
+  console.log(x);
+  console.log(y);
+  console.log(z);
+}
+
+const array =[1, 2, 3];
+fn(...array);
 
 
 

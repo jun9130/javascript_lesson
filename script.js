@@ -1,21 +1,22 @@
-function double(num) {
-  return num * 2;
+function addNumber(a, b) {
+  return a + b;
+};
+
+console.log(addNumber(1, 2));
+console.log(addNumber(1, 2, 3));
+
+//残余引数
+function num(...args) {
+  console.log(args);
 }
-console.log(double(10));
+num(1, 2, 3);
 
-
-function un() {
-}
-console.log(un());
-
-
-function word(x, y="夏") {
-  return x + y;
+//Spread構文
+function fn(x, y, z) {
+  console.log(x);
+  console.log(y);
+  console.log(z);
 }
 
-console.log(word("暑い"));
-console.log(word("暑い", ""));
-console.log(word("暑い", "部屋"));
-
-
-
+const array =[1, 2, 3];
+fn(...array);
