@@ -1,22 +1,17 @@
-function addNumber(a, b) {
-  return a + b;
-};
+//if文
+// if (true) {
+//   console.log('trueなので実行される')
+// }
 
-console.log(addNumber(1, 2));
-console.log(addNumber(1, 2, 3));
+// const num = Number(prompt('1~99の数字を入れてください'));
+// if (num < 50) {
+//   document.write(`${num}は50より小さいです`);
+// } else if (num < 100) {
+//   document.write(`${num}は50以上で100未満です`);
+// } else {
+//   document.write("1~99の数字を入れてください");
+// }
 
-//残余引数
-function num(...args) {
-  console.log(args);
-}
-num(1, 2, 3);
 
-//Spread構文
-function fn(x, y, z) {
-  console.log(x);
-  console.log(y);
-  console.log(z);
-}
-
-const array =[1, 2, 3];
-fn(...array);
+const year = new Date().getFullYear();
+window.document.write(`${year}年`);
