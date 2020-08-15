@@ -127,8 +127,6 @@ if (条件式) {
     実行する文;
 }
 
-
-
 //switch文 //break文でswitch文から抜ける
 switch (式) {
   case ラベル1:
@@ -141,6 +139,20 @@ switch (式) {
       // どのcaseにも該当しない場合の処理
       break;
 }
+
+
+
+//while文
+while (条件式) {
+    実行する文;
+}
+
+//for文
+for (初期化式; 条件式; 増分式) {
+    実行する文;
+}
+
+
 
 
 // typeof演算子
