@@ -12,12 +12,25 @@
 const 変数 = {
     プロパティやメソッド
 };
+
+// Objectからインスタンスオブジェクトを作成
+const obj = new Object(); //あまり使わない
+
+//複数のプロパティ
+const color = {
+    // それぞれのプロパティは`,`で区切る
+    red: "red",
+    green: "green",
+    blue: "blue"
+};
+
+//プロパティへのアクセス
 const obj = {
   key: 'value'
 };
-// ドット記法
+ドット記法
 console.log(obj.key); // => "value"
-// ブラケット記法
+ブラケット記法
 console.log(obj["key"]); // => "value"
 
 
