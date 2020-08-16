@@ -33,6 +33,15 @@ console.log(obj.key); // => "value"
 ブラケット記法
 console.log(obj["key"]); // => "value"
 
+const languages = {
+  ja: '日本語',
+  en: '英語'
+};
+//分割代入で定義
+const {ja, en} = languages;
+console.log(ja);
+console.log(en);
+
 
 
 // Window, Documentオブジェクト

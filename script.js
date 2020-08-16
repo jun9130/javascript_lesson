@@ -1,16 +1,21 @@
-const obj = {
-  key: "value"
+const languages = {
+  ja: '日本語',
+  en: '英語'
 };
+//分割代入で定義
+const {ja, en} = languages;
+console.log(ja);
+console.log(en);
 
-const color = {
-  red: "red",
-  blue: "blue",
-  yellow: "yellow"
-};
 
-const name = '名前';
-const person = {
-  name: name
-};
-console.log(person.name);
-console.log(person["name"]);
+const obj = {};
+obj.key = 'value'; 
+obj.age = 22;
+const {key, age} = obj;
+console.log(key);
+console.log(age);
+
+delete obj.age;
+console.log(obj);
+
+
