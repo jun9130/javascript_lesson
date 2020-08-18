@@ -70,6 +70,16 @@ var 再代入◯ 再定義◯
 //配列
 const array = [];
 
+const numbers = [1, 2, 3];
+//配列の配列
+const matrix = [
+  ['a', 'b'],
+  ['c', 'd']
+];
+//lengthプロパティ
+const array = ["one", "two", "three"];
+console.log(array.length); //要素の数取得
+console.log(array[array.length - 1]); //要素の数 - 1 = 最後の要素
 
 
 //分割代入
