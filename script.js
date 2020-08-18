@@ -1,22 +1,22 @@
-const emptyArray = [];
-const numbers = [1, 2, 3];
-//配列の配列
-const matrix = [
-  ['a', 'b'],
-  ['c', 'd']
+//インデックスの取得
+const pro = ['ruby', 'PHP', 'JavaScript', 'Go'];
+const indexOfJS = pro.indexOf('JavaScript');
+document.write(`配列の${indexOfJS + 1}番目には${pro[2]}が入っています`);
+
+//条件に一致する要素の取得
+const colors = [
+  {color: "red"},
+  {color: "blue"},
+  {color: "yellow"}
 ];
+const blueColor = colors.find((obj) => {
+  return obj.color === "blue";
+});
+console.log(blueColor);
 
-window.document.write(numbers[0]);
-console.log(matrix[0]);
-console.log(matrix[0][0]);
-
-const array = ["one", "two", "three"];
-console.log(array.length); //要素の数取得
-console.log(array[array.length - 1]); //要素の数 - 1 = 最後の要素
-
-
-//分割代入
-const num = [1, 2, 3];
-const [one, two, three] = num;
-console.log(three);
-
+//指定範囲の要素を取得
+const array =["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+console.log(array.slice(1, 4));
+console.log(array.slice(1));
+console.log(array.slice(-1));
+console.log(array.slice(4, 1));
