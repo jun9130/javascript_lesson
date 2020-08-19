@@ -1,10 +1,14 @@
-//プロトタイプオブジェクト
-const obj = {}; //作成時にObject.prototype`に定義されたものを継承
-console.log(obj.toString === Object.prototype.toString); //=>trueになる
+//配列の追加
+const array =['A', 'B', 'C'];
+array.push('D');
+console.log(array);
 
+const poppedItem = array.pop();
+console.log(poppedItem);
+console.log(array);
 
-//
-const array = ['PHP', 'Ruby', 'JavaScript'];
-if (array.includes('JavaScript')) {
-  window.document.write(`配列に${array[2]}は含まれている`);
-}
+//反復
+const num = [1, 2, 3];
+num.forEach((currentValue, index, array) => {
+  console.log(currentValue, index, array);
+});

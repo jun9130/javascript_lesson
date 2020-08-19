@@ -80,6 +80,8 @@ const matrix = [
 const array = ["one", "two", "three"];
 console.log(array.length); //要素の数取得
 console.log(array[array.length - 1]); //要素の数 - 1 = 最後の要素
+//末尾に追加→push() 先頭に追加→unshift()
+//末尾から削除→pop() 先頭から削除→shift()
 
 
 //分割代入
@@ -183,7 +185,9 @@ while (条件式) {
 for (初期化式; 条件式; 増分式) {
     実行する文;
 }
-
+反復
+//map
+//forEach
 
 
 
