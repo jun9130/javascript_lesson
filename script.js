@@ -1,14 +1,7 @@
-//配列の追加
-const array =['A', 'B', 'C'];
-array.push('D');
-console.log(array);
+const btn = document.getElementById('btn');
+const text = document.getElementById('text')
 
-const poppedItem = array.pop();
-console.log(poppedItem);
-console.log(array);
-
-//反復
-const num = [1, 2, 3];
-num.forEach((currentValue, index, array) => {
-  console.log(currentValue, index, array);
+btn.addEventListener('click', function(){
+  text.style.color='red';
+  text.innerHTML = "クリックされました";
 });
