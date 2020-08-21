@@ -1,10 +1,8 @@
 const btn = document.getElementById('btn');
-const text = document.getElementById('text')
 
 btn.addEventListener('click', function(){
-  text.style.color='red';
-  text.innerHTML = "クリックされました";
-  const input = window.document.getElementById('input');
-  input.value = "書き換え"
+  const newDiv = document.createElement("div");
+  const newText = document.createTextNode('追加しました');
+  newDiv.appendChild(newText);
+  btn.parentElement.insertBefore(newDiv, btn.nextSibling);
 });
-
