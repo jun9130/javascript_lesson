@@ -116,7 +116,7 @@ const key = obj.key;
 const 関数の結果 = 関数名(引数1, 引数2);
 console.log(関数の結果);
 
-// 関数式
+// 関数式  匿名関数
 const 関数名 = function() {
     // 関数を呼び出したときの処理
     // ...
