@@ -1,5 +1,11 @@
-//関数式
-const isTweetable = function(text) {
-  return text.length <= 5;
+// function 高階関数(コールバック関数) {
+//   コールバック関数();
+// }
+
+function unfloow() {
+  console.log('フォローを外しました');
 }
-console.log(isTweetable('foo'));
+
+function cancelTweet() {
+  console.log('ツイートをキャンセルしました')
+}
