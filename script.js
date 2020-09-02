@@ -2,34 +2,11 @@
 //   コールバック関数();
 // }
 
-function unfloow() {
-  console.log('フォローを外しました');
+function confirmed(fn)  {
+  const input = window.prompt("実行しますか?");
+  fn(input);
 }
 
-const cancelTweet = function cancelTweet() {
-  console.log('ツイートをキャンセルしました')
-}
-
-function confirmed(fn) {
-  if(window.confirm("実行しますか?")) {
-    fn();
-  }
-}
-
-confirmed(unfloow);
-
-// const unfollow = function () {
-//   console.log('フォローを外しました');
-// }
-
-// const cancelTweet = function () {
-//   console.log('ツイートをキャンセルしました')
-// }
-
-// function confirmed(fn) {
-//   if(window.confirm("実行しますか?")) {
-//     fn();
-//   }
-// }
-
-// confirmed(cancelTweet);
+confirmed(function (input) {
+  console.log(input);
+})
