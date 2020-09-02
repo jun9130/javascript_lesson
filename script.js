@@ -1,12 +1,11 @@
-// function 高階関数(コールバック関数) {
-//   コールバック関数();
-// }
+// const btn = document.getElementById("button");
 
-function confirmed(fn)  {
-  const input = window.prompt("実行しますか?");
-  fn(input);
-}
+// btn.addEventListener("click", function() {
+//   console.log('フォロー解除');
+// });
 
-confirmed(function (input) {
-  console.log(input);
+const foods = ["にんじん", "なす", "しいたけ"];
+
+foods.forEach(function(food) {
+  console.log(food);
 })

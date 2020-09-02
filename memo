@@ -236,6 +236,9 @@ console.log(typeof "JavaScript");
 const str = '文字列';
 console.log(`これは${str}です`);
 
-//addEventListener
+//addEventListener 第一引数にイベント名、第二引数にコールバック関数
 対象の要素.addEventListener(何か起きたら, 何かする, false);
 オブジェクト.addEventListener('イベント名',function(){処理内容},false);
+
+
+//forEach
