@@ -116,6 +116,27 @@ const key = obj.key;
 const 関数の結果 = 関数名(引数1, 引数2);
 console.log(関数の結果);
 
+//関数の実行
+関数名();
+
+//コールバック関数 →引数に関数を渡す 関数の中で関数を実行する
+function 高階関数(コールバック関数) {
+  コールバック関数();
+}
+例
+function unfloow() {
+  console.log('フォローを外しました');
+}
+function cancelTweet() {
+  console.log('ツイートをキャンセルしました')
+}
+function confirmed(fn) {
+  if(window.confirm("実行しますか?")) {
+    fn();
+  }
+}
+confirmed(unfloow);
+
 // 関数式  匿名関数
 const 関数名 = function() {
     // 関数を呼び出したときの処理
@@ -125,13 +146,22 @@ const 関数名 = function() {
 // 関数式は変数名で参照できるため、"関数名"を省略できる
 const 変数名 = function() {
 };
+例
+const unfollow = function () {
+  console.log('フォローを外しました');
+}
+const cancelTweet = function () {
+  console.log('ツイートをキャンセルしました')
+}
+function confirmed(fn) {
+  if(window.confirm("実行しますか?")) {
+    fn();
+  }
+}
+confirmed(cancelTweet);
+
 // 関数宣言では"関数名"は省略できない
 function 関数名() {
-}
-
-//コールバック関数 →引数に関数を渡す 関数の中で関数を実行する
-function 高階関数(コールバック関数) {
-  コールバック関数();
 }
 
 
