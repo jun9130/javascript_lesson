@@ -1,11 +1,10 @@
-// const btn = document.getElementById("button");
+function num() {
+  number = window.prompt('数字を入れてください')
+  console.log(`${number}の10倍は${parseInt(number) * 10}です`);
+}
 
-// btn.addEventListener("click", function() {
-//   console.log('フォロー解除');
-// });
+num();
 
-const foods = ["にんじん", "なす", "しいたけ"];
 
-foods.forEach(function(food) {
-  console.log(food);
-})
+
+
