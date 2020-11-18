@@ -88,10 +88,18 @@
 
 // }));
 
-async function callApi(){
-  const res = await window.fetch('https://jsonplaceholder.typicode.com/posts?userId=1');
-  const users = await res.json();
-  console.log(users);
-}
+// async function callApi(){
+//   const res = await window.fetch('https://jsonplaceholder.typicode.com/posts?userId=1');
+//   const users = await res.json();
+//   console.log(users);
+// }
 
-callApi();
+// callApi();
+
+const emptyArray = [];
+const numbers = [1, 2, 3];
+// 2次元配列（配列の配列）
+const matrix = [
+    ["a", "b"],
+    ["c", "d"]
+];
