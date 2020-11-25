@@ -1,3 +1,9 @@
-const num = [1, 24, 5, 99, 7];
-num.sort(); //文字列に変換される
-console.log(num);
+// const fun = () => {
+//   window.document.write("<div>こんにちは</div>")
+// }
+
+function changeColor(newColor) {
+  const elem = document.getElementById('para');
+  elem.style.color = newColor;
+}
+
