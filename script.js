@@ -1,9 +1,5 @@
-const fun = () => {
-  window.document.write("<div>こんにちは</div>")
+function double(num) {
+  return num * 2;
 }
 
-function changeColor(newColor) {
-  const elem = document.getElementById('para');
-  elem.style.color = newColor;
-}
-
+console.log(double(10))
