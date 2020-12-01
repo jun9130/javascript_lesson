@@ -1,13 +1,5 @@
-function double(num) {
-  return num * 2;
-}
+const button = document.querySelector('button');
 
-console.log(double(10))
-
-
-const array = [1, 2, 3];
-
-const doubleArray = array.map(function(value) {
-    return value * 2; 
+button.addEventListener('click', () => {
+  console.log('click button')
 });
-console.log(doubleArray); 
