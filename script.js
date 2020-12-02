@@ -1,5 +1,5 @@
 const button = document.querySelector('button');
-
+const li = document.querySelector('li');
 button.addEventListener('click', () => {
-  console.log('click button')
+  li.classList.add('done');
 });
