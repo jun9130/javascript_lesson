@@ -65,7 +65,9 @@ const 再代入× 再定義× →定数ではない→オブジェクトの中�
 let 再代入◯ 再定義×
 var 再代入◯ 再定義◯
 
-
+//addEventListener
+//querySelector
+//getElementByID
 
 //配列
 const array = [];
