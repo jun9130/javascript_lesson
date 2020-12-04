@@ -1,13 +1,9 @@
-const btn = document.getElementById('btn');
-
-btn.addEventListener('click', function(){
-  const text = document.getElementById('text');
-  const newDiv = document.createElement("div");
-  const text = document.getElementById('text');
-  const newText = document.createTextNode('クリックで追加');
-  newDiv.appendChild(newText);
-  btn.parentElement.insertBefore(newDiv, btn.nextSibling);
+const addButton = window.document.getElementById('addButton');
+addButton.addEventListener('click', ()=> {  //アロー関数
+  const input = window.document.querySelector('input'); //input要素取得
+  const li = window.document.createElement('li'); //liタグ作成
+  const ul = window.document.querySelector('ul'); //ul要素取得
+  li.textContent = input.value; //入力されたテキストをliのテキストに反映
+  ul.appendChild(li); //ulタグの最後に追加
+  
 });
-
-const inputText = document.getElementById('inputText');
-console.log(inputText.value);
