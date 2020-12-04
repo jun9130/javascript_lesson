@@ -74,6 +74,7 @@ var 再代入◯ 再定義◯
 //Element.closest()
 //Document.createElement()
 //HTMLElement.innerText
+//Node.textContent
 //Node.appendChild
 
 //配列
