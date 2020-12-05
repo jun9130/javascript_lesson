@@ -1,18 +1,7 @@
-const button = document.getElementById('add-button');
+const button = document.querySelector('button');
 button.addEventListener('click', ()=> {
-  const input = document.getElementById('new-todo');
+  const form = button.insertAdjacentHTML('afterend','<form action=""><textarea name="" id="" cols="30" rows="5" placeholder="レビューを書いてください" ></textarea><input type="submit"></form>');
   
-  const li = document.createElement('li');
-  li.innerText = input.value;
+}, { once: true}); 
 
-  const doneButton = document.createElement('button');
-  doneButton.innerText = 'done';
-  li.appendChild(doneButton);
-  doneButton.addEventListener('click', ()=> {
-    const li = doneButton.closest('li');
-    li.classList.add('done');
-  });
-  
-  const ul = document.querySelector('ul');
-  ul.appendChild(li);
-});
+// { once: true} イベント1回のみ発動
