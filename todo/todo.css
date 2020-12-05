@@ -3,3 +3,17 @@
   margin: 0 auto;
   text-align: center;
 }
+
+ul {
+  list-style: none;
+}
+
+.todo {
+}
+
+.input {
+}
+
+.do {
+  text-decoration: line-through;
+}
