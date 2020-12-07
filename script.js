@@ -4,10 +4,6 @@
   
 // }, { once: true}); 
 
-const testElement = document.getElementById('test')
-
-
-testElement.addEventListener('click', function(){
-  this.textContent = "テストがクリックされました";
-  alert("テストがクリックされました");
-});
+const weather = ["晴れ", "曇り", "雨"];
+weather.push("雪");
+document.getElementById('test').textContent = "今日の天気は" + weather[3];
