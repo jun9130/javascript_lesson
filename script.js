@@ -4,6 +4,11 @@
   
 // }, { once: true}); 
 
-const weather = ["晴れ", "曇り", "雨"];
-weather.push("雪");
-document.getElementById('test').textContent = "今日の天気は" + weather[3];
+const weather = ["晴れ", "曇り", "雨", "雪"];
+
+for (let i = 0; i < weather.length; i++) {
+  let li = document.createElement('li');
+  li.textContent = weather[i];
+  document.getElementById('number').appendChild(li);
+};
+
