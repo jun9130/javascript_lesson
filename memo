@@ -69,6 +69,11 @@ var 再代入◯ 再定義◯
 //Document.querySelector()
 //Document.querySelectorAll()
 //Element.classList
+classList.add
+classList.remove
+classList.toggle→追加削除の切り替え
+
+
 //getElementByID
 //Array.prototype.forEach()
 //Element.closest()
@@ -128,6 +133,8 @@ console.log(関数の結果);
 
 //関数の実行
 関数名();
+
+//this
 
 //コールバック関数 →引数に関数を渡す 関数の中で関数を実行する
 function 高階関数(コールバック関数) {

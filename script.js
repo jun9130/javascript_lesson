@@ -4,11 +4,12 @@
   
 // }, { once: true}); 
 
-const weather = ["晴れ", "曇り", "雨", "雪"];
+const testButton = document.getElementById('test');
 
-for (let i = 0; i < weather.length; i++) {
-  let li = document.createElement('li');
-  li.textContent = weather[i];
-  document.getElementById('number').appendChild(li);
-};
-
+testButton.addEventListener('click', function(){
+  // this.classList.toggle("test2");
+  const listElment = document.querySelectorAll('.list li');
+  for (let i = 0; i < listElment.length; i++) {
+    listElment[i].classList.toggle("test");
+  }
+});
