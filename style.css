@@ -43,3 +43,13 @@ main {
 .tabs li a.active {
   background-color: #fff;
 }
+
+.contents li {
+  background-color: #fff;
+  padding: 20px;
+  display: none;
+}
+
+.contents li.active {
+  display: block;
+}

@@ -4,6 +4,10 @@
   
 // }, { once: true}); 
 
+const tabs = document.querySelectorAll(".tabs li a");
+const contents = document.querySelectorAll(".contents li");
 
+console.log(tabs);
+console.log(contents);
 
 
