@@ -66,8 +66,11 @@ let 再代入◯ 再定義×
 var 再代入◯ 再定義◯
 
 //EventTarget.addEventListener()
+イベント
+
 //Document.querySelector()
 //Document.querySelectorAll()
+
 //Element.classList
 classList.add
 classList.remove

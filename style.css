@@ -1,36 +1,45 @@
-#test {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 40px;
-  background-color: #ddd;
-  border-radius: 5px;
-  cursor: pointer;
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-#test.test2 {
-  background-color: yellow;
+a {
+  color: #333;
+  text-decoration: none;
 }
 
-ul{
-  list-style: none;
-}
-
-li {
-  width: 100px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 3px;
+main {
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
   background-color: #eee;
+  padding: 20px;
 }
 
-li:not(:first-of-type) {
-  margin-top: 5px;
+.tabs {
+  display: flex;
+  justify-content: space-between;
 }
 
-li.test {
-  opacity: 0;
+.tabs li {
+  width: 32px;
+}
+
+.tabs li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: #bbb;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  transition: 0.3s;
+}
+
+.tabs li a:not(.active):hover {
+  opacity: 0.7;
+}
+
+.tabs li a.active {
+  background-color: #fff;
 }

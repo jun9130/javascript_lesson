@@ -4,12 +4,6 @@
   
 // }, { once: true}); 
 
-const testButton = document.getElementById('test');
 
-testButton.addEventListener('click', function(){
-  // this.classList.toggle("test2");
-  const listElment = document.querySelectorAll('.list li');
-  for (let i = 0; i < listElment.length; i++) {
-    listElment[i].classList.toggle("test");
-  }
-});
+
+
