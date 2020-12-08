@@ -1,3 +1,4 @@
+@charset "utf-8";
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -22,7 +23,7 @@ main {
 }
 
 .tabs li {
-  width: 32px;
+  width: 32%; /* タブの大きさ */
 }
 
 .tabs li a {
