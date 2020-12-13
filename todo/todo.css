@@ -1,4 +1,9 @@
+body {
+  background-color: teal;
+}
+
 #wrapper {
+  padding-top: 50px;
   width: 50%;
   margin: 0 auto;
   text-align: center;
