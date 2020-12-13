@@ -4,17 +4,9 @@
   
 // }, { once: true}); 
 
-const tax = 1.1;
+const selectElement = document.querySelector('.ice-cream');
 
-
-
-function insertText(itemPrice, element) {
-  function calculation(price) {
-    return Math.floor(price * tax);
-  }
-
-  document.getElementById(element).textContent = `${itemPrice}円の商品の税込価格は${calculation(itemPrice)}円です。`
-}
-
-insertText(100, "result");
-insertText(300, "result2");
+selectElement.addEventListener('change', (event) => {
+  const result = document.querySelector('.result');
+  result.textContent = `You like ${event.target.value}`;
+});
