@@ -3,32 +3,29 @@
 } */
 
 .wrapper {
-  background-color: green;
   width: 50%;
   margin: 0 auto;
 
 }
 
-h1 {
-  background-color: red;
-}
-
-.new-task {
-  background-color: blue;
-}
-
-input {
-  background-color: yellow;
-}
-
-
-li {
+ul, li {
   list-style: none;
 }
 
 ul {
   padding: 0;
 }
-.task-list {
-  background-color: pink;
+
+li {
+  padding-bottom: 30px;
+}
+
+.done {
+  text-decoration-line: line-through;
+} 
+.doneButton {
+  margin-left: 5px;
+}
+.deleteButton {
+  margin-left: 5px;
 }

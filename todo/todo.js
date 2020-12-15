@@ -9,9 +9,23 @@ addButton.addEventListener('click', ()=> {  //アロー関数
 
   const doneButton = window.document.createElement('button'); //buttonタグ作成
   doneButton.textContent = "完了"; //「完了」のテキスト追加
+  doneButton.classList.add("doneButton")
   li.appendChild(doneButton); //liタグの末尾に追加
 
+  const deleteButton = window.document.createElement('button');
+  deleteButton.textContent = "削除";
+  deleteButton.classList.add("deleteButton");
+  li.appendChild(deleteButton);
+
+
   doneButton.addEventListener('click', ()=> {
-    li.classList.add("do"); //liタグにdoクラスを追加
+    li.classList.add("done"); //liタグにdoクラスを追加
   });
+
+  deleteButton.addEventListener('click', ()=> {
+    li.style.display = "none" ;
+  });
+
+
+
 });
