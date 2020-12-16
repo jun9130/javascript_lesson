@@ -4,9 +4,13 @@
   
 // }, { once: true}); 
 
-const selectElement = document.querySelector('.ice-cream');
+//.fooを配列で取得
+const classes = document.getElementsByClassName('foo');
+for (const classNode of classes) {
+  console.log(classNode.innerText);
+}
 
-selectElement.addEventListener('change', (event) => {
-  const result = document.querySelector('.result');
-  result.textContent = `You like ${event.target.value}`;
-});
+
+const forms = document.forms.demoForm;
+const title = forms.title.value;
+console.log(title);
