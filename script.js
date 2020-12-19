@@ -4,13 +4,3 @@
   
 // }, { once: true}); 
 
-//.fooを配列で取得
-const classes = document.getElementsByClassName('foo');
-for (const classNode of classes) {
-  console.log(classNode.innerText);
-}
-
-
-const forms = document.forms.demoForm;
-const title = forms.title.value;
-console.log(title);
