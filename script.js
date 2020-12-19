@@ -4,3 +4,12 @@
   
 // }, { once: true}); 
 
+ document.getElementById('modalOpen').addEventListener('click', function(){
+  document.getElementById('modal').classList.add("modalActive")
+  document.getElementById('mask').classList.add("maskActive")
+ });
+
+ document.getElementById('modalClose').addEventListener('click', function(){
+  document.getElementById('modal').classList.remove("modalActive")
+  document.getElementById('mask').classList.remove("maskActive")
+ });
