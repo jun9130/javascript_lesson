@@ -13,3 +13,8 @@
   document.getElementById('modal').classList.remove("modalActive")
   document.getElementById('mask').classList.remove("maskActive")
  });
+
+
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
