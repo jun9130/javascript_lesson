@@ -4,17 +4,8 @@
   
 // }, { once: true}); 
 
- document.getElementById('modalOpen').addEventListener('click', function(){
-  document.getElementById('modal').classList.add("modalActive")
-  document.getElementById('mask').classList.add("maskActive")
- });
+//配列
+const weather = ["晴れ", "曇り", "雨"];
+weather.push("雪");
 
- document.getElementById('modalClose').addEventListener('click', function(){
-  document.getElementById('modal').classList.remove("modalActive")
-  document.getElementById('mask').classList.remove("maskActive")
- });
-
-
-const months = ['March', 'Jan', 'Feb', 'Dec'];
-months.sort();
-console.log(months);
+document.getElementById("test").textContent = "今日の天気は" + weather[3];
