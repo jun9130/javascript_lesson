@@ -4,8 +4,12 @@
   
 // }, { once: true}); 
 
-//配列
-const weather = ["晴れ", "曇り", "雨"];
-weather.push("雪");
+function sum(numbers) {
+  let total = 0;
+  for (let i = 0; i < numbers.length; i++) {
+      total += numbers[i];
+  }
+  return total;
+}
 
-document.getElementById("test").textContent = "今日の天気は" + weather[3];
+console.log(sum([1, 2, 3, 4, 5]));
