@@ -4,12 +4,7 @@
   
 // }, { once: true}); 
 
-function sum(numbers) {
-  let total = 0;
-  for (let i = 0; i < numbers.length; i++) {
-      total += numbers[i];
-  }
-  return total;
-}
+const array = [1, 4, 9, 16];
+const map = array.map(x => x * 2);
 
-console.log(sum([1, 2, 3, 4, 5]));
+console.log(map);
