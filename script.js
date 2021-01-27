@@ -4,7 +4,16 @@
   
 // }, { once: true}); 
 
-const array = [1, 4, 9, 16];
-const map = array.map(x => x * 2);
+const alphabet = ["b", "c", "a"];
+console.log(alphabet.sort());
 
-console.log(map);
+
+let numbers = [11, 3, 7, 99, 1022, 34];
+//アロー関数 昇順
+numbers.sort((a, b)=> a - b);
+console.log(numbers);
+
+let numbers2 = [23, 593, 4, 2351, 9, 13, 89, 56];
+//アロー関数 降順
+numbers.sort((a, b) => b - a);
+console.log(numbers);
