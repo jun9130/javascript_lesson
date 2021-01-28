@@ -7,7 +7,6 @@
 メソッド
  - オブジェクトの機能に相当
 
-
 // オブジェクトの生成
 const 変数 = {
     プロパティやメソッド
@@ -42,8 +41,6 @@ const {ja, en} = languages;
 console.log(ja);
 console.log(en);
 
-
-
 // Window, Documentオブジェクト
 windowオブジェクト 省略可 = {
   
@@ -65,63 +62,17 @@ const 再代入× 再定義× →定数ではない→オブジェクトの中�
 let 再代入◯ 再定義×
 var 再代入◯ 再定義◯
 
-//EventTarget.addEventListener()
-イベント
 
-//Document.querySelector()
-//Document.querySelectorAll()
-
-//Element.classList
-classList.add
-classList.remove
-classList.toggle→追加削除の切り替え
-
-
-//getElementByID
-//Array.prototype.forEach()
-//Element.closest()
-//Document.createElement()
-//HTMLElement.innerText
-//Node.textContent
-//Node.appendChild
 
 //配列
 const array = [];
-
 const numbers = [1, 2, 3];
 //配列の配列
 const matrix = [
   ['a', 'b'],
   ['c', 'd']
 ];
-//lengthプロパティ
-const array = ["one", "two", "three"];
-console.log(array.length); //要素の数取得
-console.log(array[array.length - 1]); //要素の数 - 1 = 最後の要素
-//末尾に追加→push() 先頭に追加→unshift()
-//末尾から削除→pop() 先頭から削除→shift()
 
-
-//分割代入
-const array = [1, 2];
-const [a, b] = array;
-console.log(array[0]);
-
-const array = [1, 2]; //これと同じ結果
-const a = array[0];
-const b = array[1];
-
-const obj = {
-  key: "value"
-};
-const { key } = obj; //オブジェクトの生成は{ }で囲む
-console.log(key);
-
-const obj = {         //これと同じ結果
-    "key": "value"
-};
-const key = obj.key;
-co
 
 
 // 関数の定義
@@ -183,20 +134,41 @@ confirmed(cancelTweet);
 function 関数名() {
 }
 
-
-
-//デフォルト引数
-function 関数名(仮引数1 = デフォルト値1, 仮引数2 = デフォルト値2) {
-
+// アロー関数
+const 関数名 = (引数) => {
+  return 処理
 }
+//アロー関数の場合、thisで束縛
 
-//可変長引数→引数が固定ではなく任意の個数
 
-//残余引数
-function num(...args) {
-  console.log(args);
-}
-num(1, 2, 3);
+
+//EventTarget.addEventListener()
+イベント
+
+//Document.querySelector()
+//Document.querySelectorAll()
+
+//Element.classList
+classList.add
+classList.remove
+classList.toggle→追加削除の切り替え
+
+//getElementByID
+//Array.prototype.forEach()
+//Element.closest()
+//Document.createElement()
+//HTMLElement.innerText
+//Node.textContent
+//Node.appendChild
+
+//lengthプロパティ
+const array = ["one", "two", "three"];
+console.log(array.length); //要素の数取得
+console.log(array[array.length - 1]); //要素の数 - 1 = 最後の要素
+//末尾に追加→push() 先頭に追加→unshift()
+//末尾から削除→pop() 先頭から削除→shift()
+
+
 
 //Spread構文
 function fn(x, y, z) {
@@ -210,47 +182,6 @@ fn(...array);
 
 
 
-//if文
-if (条件式) {
-    実行する文;
-}
-
-//switch文 //break文でswitch文から抜ける
-switch (式) {
-  case ラベル1:
-      // `式`の評価結果が`ラベル1`と一致する場合に実行する文
-      break;
-  case ラベル2:
-      // `式`の評価結果が`ラベル2`と一致する場合に実行する文
-      break;
-  default:
-      // どのcaseにも該当しない場合の処理
-      break;
-}
-
-
-
-//while文
-while (条件式) {
-    実行する文;
-}
-
-//for文
-for (初期化式; 条件式; 増分式) {
-    実行する文;
-}
-反復
-初期化式→条件式→実行する文→増分式
-//例
-for (let i = 0; i < 10; i++) {
-  console.log(i);
-};
-
-
-//map
-//forEach
-
-
 
 // typeof演算子
 データ型の確認
@@ -262,9 +193,4 @@ console.log(typeof "JavaScript");
 const str = '文字列';
 console.log(`これは${str}です`);
 
-//addEventListener 第一引数にイベント名、第二引数にコールバック関数
-対象の要素.addEventListener(何か起きたら, 何かする, false);
-オブジェクト.addEventListener('イベント名',function(){処理内容},false);
 
-
-//forEach
