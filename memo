@@ -141,6 +141,8 @@ const 関数名 = (引数) => {
 //アロー関数の場合、thisで束縛
 
 
+forEach文
+for文
 
 //EventTarget.addEventListener()
 イベント
