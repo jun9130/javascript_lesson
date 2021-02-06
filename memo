@@ -150,6 +150,7 @@ for文
 //Document.querySelector()
 //Document.querySelectorAll()
 
+e.preventDefault()
 //Element.classList
 classList.add
 classList.remove
