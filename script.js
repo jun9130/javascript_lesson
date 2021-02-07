@@ -1,18 +1,15 @@
-fruits = ["みかん", "いちご", "りんご", "ぶどう", "ばなな"]
-const fruitsList = document.getElementById('box')
+const modalOpen = document.getElementById("modalOpen");
+const modalClose = document.getElementById("modalClose");
 
 
-//for
-for (let i = 0; i < fruits.length; i++) {
-  const li = document.createElement('li');
-  li.textContent = fruits[i];
-  fruitsList.appendChild(li);
-}
-
-
-//forEach
-fruits.forEach((fruit) => {
-  const li = document.createElement('li');
-  li.textContent = fruit;
-  fruitsList.appendChild(li);
+modalOpen.addEventListener("click", (e)=> {
+  e.preventDefault()
+  document.getElementById("modal").classList.add("active");
+  document.getElementById("mask").classList.add("active");
 });
+
+modalClose.addEventListener("click", (e)=> {
+  e.preventDefault()
+  document.getElementById("modal").classList.remove("active");
+  document.getElementById("mask").classList.remove("active");
+})

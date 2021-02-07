@@ -1,2 +1,94 @@
 @charset "utf-8";
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+  background-color: #eee;
+  padding: 20px;
+  height: 200vh;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.modalOpen, .modalClose {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 40px;
+  background-color: green;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none; /*下線を消す*/
+}
+
+.modalClose {
+  margin: 30px auto 0;
+}
+
+.modal {
+  /* 非表示 */
+  opacity: 0;
+  visibility: hidden;
+  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(.95);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  min-width: 500px;
+  z-index: 2;
+  transition: 0.5s;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal h2 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.modalContent {
+  line-height: 1.8;
+
+}
+
+.mask {
+  /* 非表示 */
+  opacity: 0;
+  visibility: hidden;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.7;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.mask.active {
+  opacity: 0.7;
+  visibility: visible;
+}
