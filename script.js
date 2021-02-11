@@ -1,15 +1,11 @@
-const modalOpen = document.getElementById("modalOpen");
-const modalClose = document.getElementById("modalClose");
+window.addEventListener("scroll", function() {
+  let scroll = document.documentElement.scrollTop;
+  document.getElementById("scrollValue").textContent = scroll;
 
+  if(scroll > 1600 ) {
+    document.querySelector("main").classList.add("test");
+  } else {
+    document.querySelector("main").classList.remove("test");
 
-modalOpen.addEventListener("click", (e)=> {
-  e.preventDefault()
-  document.getElementById("modal").classList.add("active");
-  document.getElementById("mask").classList.add("active");
+  }
 });
-
-modalClose.addEventListener("click", (e)=> {
-  e.preventDefault()
-  document.getElementById("modal").classList.remove("active");
-  document.getElementById("mask").classList.remove("active");
-})
