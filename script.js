@@ -1,11 +1,12 @@
-window.addEventListener("scroll", function() {
-  let scroll = document.documentElement.scrollTop;
-  document.getElementById("scrollValue").textContent = scroll;
+const TargetElement = document.querySelectorAll(".animationTarget");
+console.log("画面の高さ", window.innerHeight)
 
-  if(scroll > 1600 ) {
-    document.querySelector("main").classList.add("test");
-  } else {
-    document.querySelector("main").classList.remove("test");
 
+document.addEventListener("scroll",function() {
+  for (let i = 0; i < TargetElement.length; i++) {
+    const getElentDistance = TargetElement[i].getBoundingClientRect().top + TargetElement[i].clientHeight + .5
+    if (window.innerHeight > getElentDistance) {
+      TargetElement[i].classList.add("show");
+    }
   }
-});
+  });
