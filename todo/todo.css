@@ -1,28 +1,3 @@
-/* body {
-  background-color: teal;
-} */
-
-.wrapper {
-  width: 50%;
-  margin: 0 auto;
-  background-color: blueviolet;
-  display: block;
-  text-align: center;
-
-}
-
-
-ul, li {
-  list-style: none;
-}
-
-ul {
-  padding: 0;
-}
-
-li {
-  padding-bottom: 30px;
-}
 
 .done {
   text-decoration-line: line-through;

@@ -19,7 +19,6 @@ addButton.addEventListener('click', ()=> {
   deleteButton.classList.add("deleteButton");
   li.appendChild(deleteButton);
 
-
   doneButton.addEventListener('click', ()=> {
     li.classList.add("done"); //liタグにdoクラスを追加
   });
@@ -27,7 +26,5 @@ addButton.addEventListener('click', ()=> {
   deleteButton.addEventListener('click', ()=> {
     li.style.display = "none" ;
   });
-
-
 
 });

@@ -10,13 +10,24 @@
 
 <body>
   <div class="wrapper">
-    <h1>Todo リスト</h1>
+    <div class="title">
+      <h1>Todo リスト</h1>
+    </div>
     <div class="new-task">
       <input type="text" placeholder="New Task">
       <button id="addButton">追加</button>
     </div>
     <div class="task-list">
-      <ul></ul>
+      <ul>
+        <li>ランニング
+          <button class="doneButton">完了</button>
+          <button class="deleteButton">削除</button>
+        </li>
+        <li>掃除をする
+          <button class="doneButton">完了</button>
+          <button class="deleteButton">削除</button>
+        </li>
+      </ul>
     </div>
   </div>
 
