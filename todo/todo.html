@@ -6,30 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ToDoリスト</title>
   <link rel="stylesheet" href="todo.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
     <div class="title">
-      <h1>Todo リスト</h1>
+      <h1>ToDo リスト</h1>
     </div>
-    <div class="new-task">
-      <input type="text" placeholder="New Task">
+    <div class="new-todo">
+      <input type="text" placeholder="New ToDo" value="">
       <button id="addButton">追加</button>
     </div>
-    <div class="task-list">
+    <div class="todo-list">
       <ul>
-        <li>ランニング
-          <button class="doneButton">完了</button>
-          <button class="deleteButton">削除</button>
+        <!-- 以下仮置き -->
+        <li class="todo">
+          <input type="checkbox" >
+          <span class="todo-task">ランニング</span>
+          <button>削除</button>
         </li>
-        <li>掃除をする
-          <button class="doneButton">完了</button>
-          <button class="deleteButton">削除</button>
+        <li class="todo">
+          <input type="checkbox" >
+          <span class="todo-task">掃除をする</span>
+          <button>削除</button>
+        </li>
+        <li class="todo">
+          <input type="checkbox" >
+          <span class="todo-task">買い物に行く</span>
+          <button>削除</button>
         </li>
       </ul>
     </div>
   </div>
+
+  
 
   <script src="todo.js"></script>
 </body>
