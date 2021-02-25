@@ -63,13 +63,9 @@ button {
   font-size: 20px;
 }
 
-
-/* .done {
+.doneTodo {
   text-decoration-line: line-through;
 } 
-.doneButton {
-  
-} */
 
 .todo button {
   position: absolute;
