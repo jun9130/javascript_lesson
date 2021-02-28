@@ -1,5 +1,6 @@
-function double(num) {
-  return num * 2;
-}
+let input = document.getElementById('input').textContent;
+console.log(typeof input);
+input = Number(input);
+console.log(typeof input);
 
-double(10) 
+document.getElementById('output').textContent = input + 1000
