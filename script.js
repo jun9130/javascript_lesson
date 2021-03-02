@@ -1,17 +1,25 @@
-const today = new Date(); //インスタンス化
+const today = new Date(); //変数(インスタンス化)
+      days = ['日', '月', '火', '水', '木', '金', '土']
 
-const string = Date();
-console.log(string === today);
+let outputText = '今は';
+outputText +=  `${today.getFullYear()}年`
+outputText +=  `${today.getMonth() + 1}月`
+outputText +=  `${today.getDate()}日`
+outputText +=  ` ${today.getHours()}時`
+outputText +=  `${today.getMinutes()}分`
+outputText +=  `${today.getSeconds()}秒`
+outputText +=  `${today.getMilliseconds()}ミリ秒`
+outputText +=  ` ${days[today.getDay()]}曜日`
 
-// // new Date(year, monthIndex [, day [, hours [, minutes [, seconds [, milliseconds]]]]])
+console.log(today)
+console.log(today.getFullYear())
+console.log(today.getMonth() + 1)
+console.log(today.getDate())
+console.log(today.getHours())
+console.log(today.getMinutes())
+console.log(today.getSeconds())
+console.log(today.getMilliseconds())
+console.log(days[today.getDay()])
+outputText += 'です。'
 
-
-let birthday = new Date('December 17, 1995 03:24:00')
-let birthday2 = new Date('1995-12-17T03:24:00')
-let birthday3 = new Date(1995, 11, 17)            // the month is 0-indexed
-let birthday4 = new Date(1995, 11, 17, 3, 24, 0)
-
-console.log(birthday);
-console.log(birthday2);
-console.log(birthday3);
-console.log(birthday4);
+document.getElementById('date').textContent = outputText
