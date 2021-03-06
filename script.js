@@ -1,12 +1,9 @@
 const date = document.getElementById('date');
 const today = new Date();
 console.log(today);
-date.textContent = today.setDate(32);
+date.textContent = today.setDate(0);
 
 
-n = 3
-console.log(typeof n);
-
-const day = new Date(2021, n - 1, 3);
+const day = new Date(2021, 5 - 1, 11);
 console.log(day);
 console.log(day.setDate(32));
