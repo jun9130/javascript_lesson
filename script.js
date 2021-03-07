@@ -1,9 +1,20 @@
-const date = document.getElementById('date');
-const today = new Date();
-console.log(today);
-date.textContent = today.setDate(0);
+// console.log('test');
+// setTimeout(function() {
+//   console.log("test2");
+//   setTimeout(function() {
+//     console.log("test3")
+//   })
+// }, 3000);
 
 
-const day = new Date(2021, 5 - 1, 11);
-console.log(day);
-console.log(day.setDate(32));
+//関数の場合
+// function test() {
+//   console.log("test");
+// }
+// setTimeout(test, 1000);
+
+document.getElementById('test').addEventListener('click', function(){
+  setTimeout(function() {
+  document.getElementById('contents').style.display = 'block';
+  }, 1000)
+})
