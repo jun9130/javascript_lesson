@@ -1,20 +1,7 @@
-// console.log('test');
-// setTimeout(function() {
-//   console.log("test2");
-//   setTimeout(function() {
-//     console.log("test3")
-//   })
-// }, 3000);
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 
+const result = words.filter(word => word.length > 6);
 
-//関数の場合
-// function test() {
-//   console.log("test");
-// }
-// setTimeout(test, 1000);
+console.log(result);
 
-document.getElementById('test').addEventListener('click', function(){
-  setTimeout(function() {
-  document.getElementById('contents').style.display = 'block';
-  }, 1000)
-})
+// let newArray = arr.filter(callback(element[, index, [array]])[, thisArg])
