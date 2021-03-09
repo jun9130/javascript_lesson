@@ -1,7 +1,7 @@
-const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+const tax = 1.1
 
-const result = words.filter(word => word.length > 6);
+function calculation(price) {
+  return Math.floor( price * tax);
+}
 
-console.log(result);
-
-// let newArray = arr.filter(callback(element[, index, [array]])[, thisArg])
+console.log(calculation(120));
