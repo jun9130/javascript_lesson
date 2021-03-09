@@ -1,7 +1,24 @@
-const tax = 1.1
+//return アウトプットと処理を終了
+function sayHello(name) {
+  return `Hello ${name}`;
+}
+const result2 = sayHello("taro");
+console.log(result2);
 
-function calculation(price) {
-  return Math.floor( price * tax);
+
+
+function showHello() {
+  console.log('Hello')
+}
+const result = showHello();
+console.log(result); //=> returnがないのでundefined
+
+
+function showHello2() {
+  console.log('実行される');
+  return 'returnここで終了';
+  console.log('実行されない');
 }
 
-console.log(calculation(120));
+const result3 = showHello2();
+console.log(result3);
