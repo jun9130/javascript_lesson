@@ -1,24 +1,33 @@
-//return アウトプットと処理を終了
-function sayHello(name) {
-  return `Hello ${name}`;
-}
-const result2 = sayHello("taro");
-console.log(result2);
-
-
-
-function showHello() {
-  console.log('Hello')
-}
-const result = showHello();
-console.log(result); //=> returnがないのでundefined
-
-
-function showHello2() {
-  console.log('実行される');
-  return 'returnここで終了';
-  console.log('実行されない');
+function sayHello() {
+  return "Hello";
 }
 
-const result3 = showHello2();
-console.log(result3);
+const output = sayHello();
+console.log(output);
+
+
+
+function showYourName(name) {
+  return `Your name is ${name}`
+}
+
+const output2 = showYourName('JIRO');
+console.log(output2)
+
+
+
+function showNumber(number) {
+  console.log(number)
+}
+
+const output3 = showNumber(19);
+console.log(output3);
+
+
+
+function sayThankYou() {
+  console.log("Thank You")
+}
+
+const output4 =  sayThankYou();
+console.log(output4)
