@@ -11,9 +11,6 @@
 ## 解説
 https://jun9130.hatenablog.com/entry/2021/02/14/193755
 
-## コード
-https://github.com/jun9130/javascript_lesson/tree/master/todo
-
 ## 今後追加してみたい機能
 - タスク並び替え
 - タスク検索機能
