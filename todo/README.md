@@ -9,7 +9,7 @@
 - ダイアログ
 
 ## 解説
-https://jun9130.hatenablog.com/entry/2021/02/14/193755
+[はてなブログ](https://jun9130.hatenablog.com/entry/2021/02/14/193755)
 
 ## 今後追加してみたい機能
 - タスク並び替え
