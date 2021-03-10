@@ -1,33 +1,20 @@
-function sayHello() {
-  return "Hello";
-}
+let x = 2;
+let y = x;
 
-const output = sayHello();
-console.log(output);
+console.log(x);
+console.log(y);
 
+x += 1
+console.log(x);
+console.log(y);
 
+let obj1 = {name: "taro", age: 24};
+let obj2 = obj1;
 
-function showYourName(name) {
-  return `Your name is ${name}`
-}
+console.log(obj1);
+console.log(obj2);
 
-const output2 = showYourName('JIRO');
-console.log(output2)
+obj1.age += 1
 
-
-
-function showNumber(number) {
-  console.log(number)
-}
-
-const output3 = showNumber(19);
-console.log(output3);
-
-
-
-function sayThankYou() {
-  console.log("Thank You")
-}
-
-const output4 =  sayThankYou();
-console.log(output4)
+console.log(obj1);
+console.log(obj2);
