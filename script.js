@@ -1,20 +1,23 @@
-let x = 2;
-let y = x;
+function sayHello(name) {
+  return `hello ${name}`;
+}
 
-console.log(x);
-console.log(y);
+const result = sayHello("taro");
+console.log(result);
 
-x += 1
-console.log(x);
-console.log(y);
 
-let obj1 = {name: "taro", age: 24};
-let obj2 = obj1;
 
-console.log(obj1);
-console.log(obj2);
+function showHello() {
+  console.log('Hello');
+}
 
-obj1.age += 1
+const result2 =  showHello();
+console.log(result2); //showHello()関数内にreturnがないためundefined
 
-console.log(obj1);
-console.log(obj2);
+
+function Hello() {
+  return; //returnのみもundefined
+}
+
+const result3 =  Hello();
+console.log(result3); 
