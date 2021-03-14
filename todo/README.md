@@ -1,4 +1,4 @@
-# ToDoアプリ
+# ToDo リスト
 
 ![0fbdfd1839c2c1be662d92efb6adab8f](https://user-images.githubusercontent.com/53207844/109801513-e9bbc100-7c61-11eb-9859-93691a36da8f.gif)
 
