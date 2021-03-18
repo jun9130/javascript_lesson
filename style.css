@@ -20,8 +20,9 @@ table {
 
 tr button {
   height: 70px;
-  width: 100%;
-  font-size: 30px;
+  width: 70px;
+  font-size: 25px;
   border-radius: 8px;
   margin: 2px 0px 0px 0px;
+  cursor: pointer;
 }
