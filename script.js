@@ -23,7 +23,7 @@ back.addEventListener('click', function(){
 calculation.addEventListener('click', function(){
   const inputData = input.value
   const result = new Function( 'return ' + inputData )
-  input.value = result().toString()
+  input.value = parseFloat(result());
 });
 
 
