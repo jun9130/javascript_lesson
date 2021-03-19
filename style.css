@@ -1,7 +1,7 @@
 .dentaku {
   width: 300px;
   margin: 50px auto;
-  background-color: red;
+  background-color:#141518;
   padding: 30px;
 }
 
@@ -12,6 +12,7 @@
   margin-top: 10px;
   font-size: 30px;
   letter-spacing: 3px;
+  margin-bottom: 10px;
 }
 
 table {
@@ -25,4 +26,8 @@ tr button {
   border-radius: 8px;
   margin: 2px 0px 0px 0px;
   cursor: pointer;
+}
+
+.operator, #back, #clear, #calculation, #taxIncluded, #excludingTax {
+  background-color: #FF9933;
 }
