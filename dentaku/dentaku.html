@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="dentaku.css">
+</head>
+<body>
+  <div class="dentaku">
+    <input type="text" value="" class="dentaku-input">
+    <table>
+      <tbody>
+        <tr>
+          <td><button id="back">▶︎</button></td>
+          <td><button id="excludingTax">税抜</button></td>
+          <td><button id="taxIncluded">税込</button></td>
+          <td><button id="clear">C</button></td>
+        </tr>
+        <tr>
+          <td><button class="number">7</button></td>
+          <td><button class="number">8</button></td>
+          <td><button class="number">9</button></td>
+          <td><button class="number operator">/</button></td>
+        </tr>
+        <tr>
+          <td><button class="number">4</button></td>
+          <td><button class="number">5</button></td>
+          <td><button class="number">6</button></td>
+          <td><button class="number operator">*</button></td>
+        </tr>
+        <tr>
+          <td><button class="number">1</button></td>
+          <td><button class="number">2</button></td>
+          <td><button class="number">3</button></td>
+          <td><button class="number operator">-</button></td>
+        </tr>
+        <tr>
+          <td><button class="number">0</button></td>
+          <td><button class="number">.</button></td>
+          <td><button id="calculation">=</button></td>
+          <td><button class="number operator">+</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script type="text/javascript" src="dentaku.js" defer></script>
+
+</body>
+</html>
