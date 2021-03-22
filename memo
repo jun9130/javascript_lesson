@@ -138,7 +138,6 @@ function 関数名() {
 const 関数名 = (引数) => {
   return 処理
 }
-//アロー関数の場合、thisで束縛
 
 
 forEach文

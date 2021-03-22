@@ -1,5 +1,26 @@
-const array = [1, 2, 3];
+const canDrinkAlcohol = (age) => {
+  if (age >= 20) {
+    return true
+  } 
+    return false
+}
 
-const tenTimes = array.map(num => num * 10);
+console.log(canDrinkAlcohol(20));
 
-console.log(tenTimes);
+const test = document.getElementById('test')
+const select = document.getElementById('select');
+
+
+
+
+const needUmbrella = (weather) => {
+  if (weather === 'sunny') {
+    return 'no'
+  } else if (weather === 'cloudy') {
+    return 'maybe'
+  } else if (weather === 'rainy') {
+    return 'yes'
+  }
+}
+
+console.log(needUmbrella("rainy"));
