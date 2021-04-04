@@ -1,8 +1,13 @@
-const zip_pattern = /^\d{3}-?\d{4}/g;
-let zip = '123-4567';
+const images = [
+  {
+    "path": "https://placehold.jp/6d3d70/ffffff/500x500.png",
+    "name": "name01",
+    "caption": "コメント1"
+  },
+  {
+    "path": "https://placehold.jp/e529f2/ffffff/500x500.png",
+    "name": "name02",
+    "caption": "コメント2"
+  },
 
-if (zip_pattern.test(zip) === true) {
-  console.log("正しく入力されました");
-} else {
-  console.log("郵便番号は xxx-xxxxの書式で入力してください");
-}
+];
