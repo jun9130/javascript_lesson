@@ -1,6 +1,6 @@
 const images = [
   {
-    "path": "https://placehold.jp/6d3d70/ffffff/500x500.png",
+    "path": "https://placehold.jp/35c3e6/ffffff/500x500.png",
     "name": "name01",
     "caption": "コメント1"
   },
@@ -9,21 +9,27 @@ const images = [
     "name": "name02",
     "caption": "コメント2"
   },
+  {
+    "path": "https://placehold.jp/388210/ffffff/500x500.png",
+    "name": "name03",
+    "caption": "コメント3"
+  },
 ];
 
 let img;
 let caption;
 let div;
-img = document.createElement('img');
-img.setAttribute('src', images[0].path);
-caption = document.createElement('div');
-caption.className = 'inner';
-caption.innerHTML = '<p>' + images[0].caption + '<span>' + images[0].name + '</span>' +  '</p>';
-div = document.createElement('div');
-div.className = 'photo';
-div.appendChild(img);
-div.appendChild(caption);
 
-
-document.getElementById('img_unit').appendChild(div);
+for (let i = 0; i < images.length; i++) {
+  img = document.createElement('img');
+  img.setAttribute('src', images[i].path);
+  caption = document.createElement('div');
+  caption.className = 'inner';
+  caption.innerHTML = '<p>' + images[i].caption + '<span>' + images[i].name + '</span>' + '</p>';
+  div = document.createElement('div');
+  div.className = 'photo';
+  div.appendChild(img);
+  div.appendChild(caption);
+  document.getElementById('img_unit').appendChild(div);
+}
 
