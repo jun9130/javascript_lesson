@@ -9,6 +9,19 @@ console.log(month);
 console.log(firstDay);
 console.log(lastDay);
 
+
+for (let i = 1; i <= 3; i++) {
+  console.log(i * 10);
+}
+
+const array = [1, 2, 3];
+
+array.map(x => console.log(x * 10));
+
+
+
+
+
 // const endDayCount = endDate.getDate() // 月の末日
 // const startDay = startDate.getDay() // 月の最初の日の曜日を取得
 
