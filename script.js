@@ -1,11 +1,3 @@
-document.getElementById("header").innerHTML = "ABC";
-
-
-
-
-
-
-
 // const date = new Date(); // 今日
 // const year = date.getFullYear(); // 今年
 // const month = date.getMonth() + 1; // 今月
