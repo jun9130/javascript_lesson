@@ -7,18 +7,23 @@ const firstDayWeek = firstDay.getDay(); // 今月の一日の曜日
 const lastDayCount = lastDay.getDate(); // 今月の末日
 const weeks = ['日', '月', '火', '水', '木', '金', '土']
 
+// console.log(`${month}月`);
+// console.log(firstDay);
+// console.log(lastDay);
+// console.log(`今月は${lastDayCount}日まで`);
+// console.log(weeks[firstDayWeek]);
+console.log(firstDayWeek);
+console.log(lastDayCount);
 
 
 
-console.log(`${month}月`);
-console.log(firstDay);
-console.log(lastDay);
-console.log(`今月は${lastDayCount}日まで`);
-console.log(weeks[firstDayWeek]);
 
 
 
-// let dayCount = 1 // 日にちのカウント
+
+
+
+let dayCount = 1 // 日にちのカウント
 
 // カレンダーのHTML
 let calendarHtml = '' 
@@ -26,26 +31,24 @@ let calendarHtml = ''
 calendarHtml += `<h1>${year}/${month}</h1>`
 calendarHtml += '<table>'
 
-
-// 曜日の行
+// 日 月 火 水 木 金 土
 for (let i = 0; i < weeks.length; i++) {
     calendarHtml += '<td>' + weeks[i] + '</td>'
 }
-
-document.getElementById('calendar').innerHTML = calendarHtml
 
 
 for (let w = 0; w < 6; w++) {
     calendarHtml += '<tr>'
 
     for (let d = 0; d < 7; d++) {
-        if (w == 0 && d < startDay) {
+        if (w == 0 && d < firstDayWeek) {
             // 1行目で1日の曜日の前
             calendarHtml += '<td></td>'
-        } else if (dayCount > endDayCount) {
+        } else if (dayCount > lastDayCount) {
             // 末尾の日数を超えた
             calendarHtml += '<td></td>'
         } else {
+            // 末尾まで続ける
             calendarHtml += '<td>' + dayCount + '</td>'
             dayCount++
         }
@@ -53,4 +56,6 @@ for (let w = 0; w < 6; w++) {
     calendarHtml += '</tr>'
 }
 calendarHtml += '</table>'
+
+document.getElementById('calendar').innerHTML = calendarHtml
 
