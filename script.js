@@ -1,7 +1,4 @@
-let num = "7"
-let stringNumber = Number(num);
-console.log(stringNumber);
-
-let num = 7
-let newNum = num.toString();
-console.log(newNum);
+while (i > 0) {
+  console.log(`${i}回目のループ`);
+  i += 1;
+}
