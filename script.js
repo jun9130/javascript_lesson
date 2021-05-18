@@ -1,4 +1,3 @@
-while (i > 0) {
-  console.log(`${i}回目のループ`);
-  i += 1;
-}
+const array = [1, 10, 20, 16];
+
+const map = array.map(x => x * 2);
