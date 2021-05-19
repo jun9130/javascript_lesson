@@ -7,14 +7,6 @@ const firstDayWeek = firstDay.getDay(); // 今月の一日の曜日
 const lastDayCount = lastDay.getDate(); // 今月の末日
 const weeks = ['日', '月', '火', '水', '木', '金', '土']
 
-// console.log(`${month}月`);
-// console.log(firstDay);
-// console.log(lastDay);
-// console.log(`今月は${lastDayCount}日まで`);
-// console.log(weeks[firstDayWeek]);
-console.log(firstDayWeek);
-console.log(lastDayCount);
-
 let dayCount = 1 // 日にちのカウント
 
 // カレンダーのHTML
@@ -50,4 +42,14 @@ for (let w = 0; w < 6; w++) {
 calendarHtml += '</table>'
 
 document.getElementById('calendar').innerHTML = calendarHtml
+
+
+
+console.log(`${month}月`);
+console.log(firstDay);
+console.log(lastDay);
+console.log(`今月は${lastDayCount}日まで`);
+console.log(weeks[firstDayWeek]);
+console.log(firstDayWeek);
+console.log(lastDayCount);
 
