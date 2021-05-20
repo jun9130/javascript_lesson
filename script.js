@@ -1,3 +1,6 @@
-const array = [1, 10, 20, 16];
+function add(a, b) {
+  return a + b;
+}
 
-const map = array.map(x => x * 2);
+const test = add(2, 3);
+console.log(test);
