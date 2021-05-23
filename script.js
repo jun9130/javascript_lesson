@@ -1,13 +1,5 @@
-function add(a, b) {
-  return a + b;
-}
+const array = [1, 9, 10, 19];
 
-const test = add(2, 3);
-console.log(test);
+const result = array.map(x => x * 10);
 
-function argumentsToArray(x, y) {
-  return [x, y];
-}
-
-console.log(argumentsToArray(1, 2)); 
-console.log(argumentsToArray(1));
+console.log(result);
