@@ -1,4 +1,8 @@
-let getTriangle = (base, height) => {
-  return base * height / 2;
-};
-console.log(`三角形の面積は${getTriangle(10,2)}㎡`);
+const list = [1,2,3,4,5,6];
+const newList = [];
+
+list.forEach(function(item, index){
+  newList[index] = item*item;
+}
+
+console.log(newList);
