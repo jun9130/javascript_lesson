@@ -4,5 +4,6 @@ const newList = [];
 list.forEach(function(item, index){
   newList[index] = item*item;
 }
+)
 
 console.log(newList);
