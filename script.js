@@ -1,9 +1,5 @@
-const list = [1,2,3,4,5,6];
-const newList = [];
+const array1 = [1, 4, 9, 16];
 
-list.forEach(function(item, index){
-  newList[index] = item*item;
-}
-)
+const map1 = array1.map(x => x * 2);
 
-console.log(newList);
+console.log(map1);
